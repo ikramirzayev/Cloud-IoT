@@ -2,13 +2,13 @@ import requests
 import time
 import random
 
-# Lambda'dan aldığın URL'yi buraya yapıştır
+
 URL = "https://kmhj56l57bvd46jz24wsufntf40qjzru.lambda-url.eu-north-1.on.aws/"
 
 while True:
     veri = {
         "vehicleId": "Kamyon-34",
-        "hiz": random.randint(60, 110), # Rastgele hız
+        "hiz": random.randint(60, 140), # Rastgele hız
         "yakit": random.randint(10, 100),
         "timestamp": int(time.time())
     }
