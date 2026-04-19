@@ -3,7 +3,7 @@ import time
 import random
 
 
-URL = "https://kmhj56l57bvd46jz24wsufntf40qjzru.lambda-url.eu-north-1.on.aws/"
+URL = "https://kmhj56l57bvd46jz24wsufntf40qjzru.lambda-url.eu-north-1.on.aws/"#Lambda url
 
 while True:
     veri = {
@@ -13,7 +13,7 @@ while True:
         "timestamp": int(time.time())
     }
     
-    response = requests.post(URL, json=veri)
+    response = requests.post(URL, json=veri)#json formatinda post yontemiyle 
     print(f"Veri gitti: {veri} - Sunucu Yanıtı: {response.text}")
     
     time.sleep(5) # 5 saniyede bir veri gönder
